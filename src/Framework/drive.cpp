@@ -2,7 +2,7 @@
 #include "drive.hpp"
 #include <cmath>
 
-constexpr double WHEEL_DIAMETER = 10.16; // Centimetres
+constexpr double WHEEL_DIAMETER = 10.16; // Dimension of wheel in centimeters
 constexpr double TICKS_PER_REV = 900;
 
 // Differential Drive Class
