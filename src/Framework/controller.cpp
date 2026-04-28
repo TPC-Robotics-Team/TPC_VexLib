@@ -29,6 +29,7 @@ double SlewLimiter::update(double input) {
     return prev;
 }
 
+// Update the SlewLimiter
 void SlewLimiter::reset(double value){
     prev = value;
 }
