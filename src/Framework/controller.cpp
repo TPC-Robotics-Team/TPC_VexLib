@@ -5,7 +5,7 @@
 #include <cmath>
 
 
-// Slew Delimitation
+// Slew Delimitation Class
 SlewLimiter::SlewLimiter(double accel, double decel){
     this->accel = accel;
     this->decel = decel;

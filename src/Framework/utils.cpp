@@ -55,7 +55,7 @@ void normalizeDriveTwoMotors(double &left, double &right){
     }
 }
 
-
+// Joystick to Voltage Converting
 int joystickToVoltage(int value){
     return value * 12000.0 / MAX_JOYSTICK;
 }
