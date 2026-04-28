@@ -4,7 +4,6 @@
 
 constexpr double WHEEL_DIAMETER = 10.16; // Centimetres
 constexpr double TICKS_PER_REV = 900; // Encoder constants for VEX Motor
-constexpr double WHEEL_DIAMETER = 10.16; // Dimension of wheel in centimeters
 
 // Differential Drive Class
 DifferentialDrive::DifferentialDrive(
