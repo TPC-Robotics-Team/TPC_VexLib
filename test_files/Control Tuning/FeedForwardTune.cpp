@@ -1,6 +1,7 @@
 #include "main.h"
 #include "pros/misc.h"
 #include "auton.hpp"
+#include "controller.hpp"
 
 
 pros::Controller master(pros::E_CONTROLLER_MASTER);
