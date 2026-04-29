@@ -1,7 +1,7 @@
 #include "main.h"
 #include "pros/misc.h"
 #include "auton.hpp"
-#include "controller.hpp"
+
 
 
 pros::Controller master(pros::E_CONTROLLER_MASTER);
@@ -11,7 +11,6 @@ pros::MotorGroup RightMotors ({-2});
 
 
 AutonDifferentialDrive auton_drive(LeftMotors, RightMotors);
-EncoderOdo encoder(LeftMotors, 10.54);
 
 
 void autonomous() {

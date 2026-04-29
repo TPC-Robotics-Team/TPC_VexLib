@@ -1,3 +1,4 @@
+#include "pros/motor_group.hpp"
 #include "utils.hpp"
 #include "controller.hpp"
 #include "pros/imu.hpp"
@@ -133,37 +134,6 @@ double FeedForward::calculate(double velocity, double accel){
 
 
 
-// Encoders
-EncoderOdo::EncoderOdo(pros::MotorGroup& motors, double wheelDiam, double gearRatio)
-    : m_motorGroup(motors),
-      m_wheelCirc(wheelDiam * M_PI),
-      m_gearRatio(gearRatio) {}
-
-double EncoderOdo::degreesToCm(double degrees){
-    return (degrees / 360) * m_gearRatio * m_wheelCirc;
-}
-
-double EncoderOdo::getPosition(){
-    std::vector<double> positions = m_motorGroup.get_position_all();
-    double sum = 0.0;
-    for (double p : positions) sum += p;
-    return degreesToCm(sum / positions.size());
-}
-
-double EncoderOdo::getDelta(){
-    double current = getPosition();
-    double delta = current - m_lastPosition;
-    m_lastPosition = current;
-    return delta;
-}
-
-void EncoderOdo::reset(){
-    m_motorGroup.tare_position_all();
-    m_lastPosition = 0.0;
-}
-
-
-
 TrapezoidalProfile::TrapezoidalProfile(ProfileConstraints constraints)
     : m_constraints(constraints) {}
 
@@ -249,3 +219,14 @@ bool TrapezoidalProfile::isFinished(double t){
 double TrapezoidalProfile::totalTime(){
     return m_totalTime;
 }
+
+EncoderOdometry::EncoderOdometry(
+    pros::MotorGroup& leftMotors,
+    pros::MotorGroup& rightMotors,
+    double wheelDiam, double gearRatio
+    )
+    : m_leftMotorGroup(leftMotors),
+      m_rightMotorGroup(rightMotors),
+      m_wheelCirc(wheelDiam * M_PI),
+      m_gearRatio(gearRatio) {}
+

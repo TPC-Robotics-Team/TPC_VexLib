@@ -83,9 +83,10 @@ struct Pose{
 };
 
 
-class EncoderOdo{
+class EncoderOdometry{
 private:
-    pros::MotorGroup& m_motorGroup;
+    pros::MotorGroup& m_leftMotorGroup;
+    pros::MotorGroup& m_rightMotorGroup;
     double m_wheelCirc; // cm
     double m_gearRatio;
     double m_lastPosition = 0.0;
@@ -93,10 +94,12 @@ private:
     double degreesToCm(double degrees);
 
 public:
-    EncoderOdo(pros::MotorGroup& motors, double wheelDiam, double gearRatio = 1.0);
+    EncoderOdometry(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors, double wheelDiam, double gearRatio = 1.0);
 
     double getPosition();
     double getDelta();
+    double getVelocity();
+    double getPose();
     void reset(); 
 };
 
