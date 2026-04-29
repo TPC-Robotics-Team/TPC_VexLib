@@ -83,7 +83,7 @@ struct Pose{
 };
 
 
-class Encoder{
+class EncoderOdometry{
 private:
     pros::MotorGroup& m_motorGroup;
     double m_wheelCirc; // cm
@@ -93,7 +93,7 @@ private:
     double degreesToCm(double degrees);
 
 public:
-    Encoder(pros::MotorGroup& motors, double wheelDiam, double gearRatio = 1.0);
+    EncoderOdometry(pros::MotorGroup& motors, double wheelDiam, double gearRatio = 1.0);
 
     double getPosition();
     double getDelta();
