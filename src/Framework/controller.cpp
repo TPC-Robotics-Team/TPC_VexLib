@@ -134,30 +134,30 @@ double FeedForward::calculate(double velocity, double accel){
 
 
 // Encoders
-Encoder::Encoder(pros::MotorGroup& motors, double wheelDiam, double gearRatio)
+EncoderOdo::EncoderOdo(pros::MotorGroup& motors, double wheelDiam, double gearRatio)
     : m_motorGroup(motors),
       m_wheelCirc(wheelDiam * M_PI),
       m_gearRatio(gearRatio) {}
 
-double Encoder::degreesToCm(double degrees){
+double EncoderOdo::degreesToCm(double degrees){
     return (degrees / 360) * m_gearRatio * m_wheelCirc;
 }
 
-double Encoder::getPosition(){
+double EncoderOdo::getPosition(){
     std::vector<double> positions = m_motorGroup.get_position_all();
     double sum = 0.0;
     for (double p : positions) sum += p;
     return degreesToCm(sum / positions.size());
 }
 
-double Encoder::getDelta(){
+double EncoderOdo::getDelta(){
     double current = getPosition();
     double delta = current - m_lastPosition;
     m_lastPosition = current;
     return delta;
 }
 
-void Encoder::reset(){
+void EncoderOdo::reset(){
     m_motorGroup.tare_position_all();
     m_lastPosition = 0.0;
 }
