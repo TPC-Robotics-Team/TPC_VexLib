@@ -2,8 +2,6 @@
 #include "drive.hpp"
 #include <cmath>
 
-constexpr double WHEEL_DIAMETER = 10.16; // Centimetres
-constexpr double TICKS_PER_REV = 900; // Encoder constants for VEX Motor
 
 // Differential Drive Class
 DifferentialDrive::DifferentialDrive(
@@ -73,8 +71,5 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
 }
 
 
-// Centimetres to Encoder Tick Conversion
-double cmToTick(double cm){
-    return (cm / (M_PI * WHEEL_DIAMETER)) * TICKS_PER_REV;
-}
+
 
