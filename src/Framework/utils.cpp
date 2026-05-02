@@ -7,7 +7,7 @@
 #include "pros/rtos.hpp"
 
 // Wrap Angle
-// Wraps angles from -180 to 180
+// Wraps angles to [-180, 180]
 double wrapAngle(double x)
 {
     x = fmod(x + 180.0, 360.0);
