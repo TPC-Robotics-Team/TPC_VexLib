@@ -4,12 +4,12 @@
 // Limits Acceleration to avoid high jerk
 class SlewLimiter
 {
-   private:
+  private:
     double accel;
     double decel;
     double prev;
 
-   public:
+  public:
     SlewLimiter(double accel = 5, double decel = 10);
 
     double update(double input);
@@ -19,7 +19,7 @@ class SlewLimiter
 // PID controller
 class PID
 {
-   private:
+  private:
     double kP, kI, kD;
     double integral;
     double integralZone;
@@ -27,7 +27,7 @@ class PID
     double prevMeasurement;
     double outputLimit;
 
-   public:
+  public:
     PID(double p, double i, double d, double iZone, double iMax, double outputLimit);
 
     double update(double target, double current);
@@ -38,12 +38,12 @@ class PID
 // FeedForward controller
 class FeedForward
 {
-   private:
+  private:
     double kS, kV, kA;
 
     static double sign(double velocity);
 
-   public:
+  public:
     FeedForward(double kS, double kV, double kA);
 
     double calculate(double velocity, double accel);

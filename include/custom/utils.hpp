@@ -1,9 +1,6 @@
 #pragma once
 #include "pros/imu.hpp"
 
-
-
-
 double wrapAngle(double x);
 /*
 
@@ -29,7 +26,7 @@ int joystickToVoltage(int value);
 Maps [-127, 127] to [-12000, 12000]
 */
 
-void imuInit(pros::Imu &IMU);
+void imuInit(pros::Imu& IMU);
 /*
 
 Initialises IMU sensor at the start
