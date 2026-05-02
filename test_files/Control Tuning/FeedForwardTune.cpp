@@ -1,6 +1,6 @@
 #include "main.h"
 #include "pros/misc.h"
-#include "auton.hpp"
+#include "custom/auton.hpp"
 
 
 
