@@ -1,7 +1,8 @@
-#include "const.hpp"
-#include "subsystems.hpp"
-#include "utils.hpp"
+#include "custom/subsystems.hpp"
+#include "custom/const.hpp"
+#include "custom/utils.hpp"
 #include <cmath>
+
 
 // Differential Drive Class
 DifferentialDrive::DifferentialDrive(pros::MotorGroup &LeftMotors,

@@ -1,4 +1,4 @@
-#include "auton.hpp"
+#include "custom/auton.hpp"
 
 // Autonomous control for a differential drive robot. This class provides
 // methods to control the left and right motors of the robot independently,
