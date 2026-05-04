@@ -14,3 +14,14 @@ class DifferentialDrive
     void arcade(int throttle, int steer);
     void curvature(int throttle, int steer, bool quickTurn, double correction = 0);
 };
+class Intake
+{
+  private:
+    pros::MotorGroup& IntakeMotors;
+
+  public:
+    Intake(pros::MotorGroup& IntakeMotors);
+
+    void set(int power);
+    void intake_control();
+};
