@@ -34,6 +34,13 @@ Given wheel diameter and degrees traveled, return distance in cm.
 
 */
 
+double averageVector(const std::vector<double>& v);
+/*
+
+Returns the average value of entries of a vector
+
+*/
+
 void imuInit(pros::Imu& IMU);
 /*
 

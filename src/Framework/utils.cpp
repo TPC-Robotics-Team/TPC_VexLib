@@ -1,6 +1,7 @@
 #include "custom/utils.hpp"
 
 #include <cmath>
+#include <numeric>
 
 #include "custom/const.hpp"
 #include "pros/imu.hpp"
@@ -35,6 +36,16 @@ int joystickToVoltage(int value)
 double degreesToCm(double degrees, double wheel_diam)
 {
     return (degrees / 360) * wheel_diam * M_PI;
+}
+
+// Averages elements of a tuple
+double averageVector(std::vector<double>& v)
+{
+    if (v.empty())
+        return 0.0;
+
+    double sum = std::accumulate(v.begin(), v.end(), 0.0);
+    return sum / v.size();
 }
 
 // IMU Initialisation

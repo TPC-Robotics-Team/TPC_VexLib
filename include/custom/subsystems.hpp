@@ -14,6 +14,7 @@ class DifferentialDrive
     void arcade(int throttle, int steer);
     void curvature(int throttle, int steer, bool quickTurn, double correction = 0);
 };
+
 class Intake
 {
   private:
@@ -24,4 +25,4 @@ class Intake
 
     void set(int power);
     void intake_control();
-}; 
+};

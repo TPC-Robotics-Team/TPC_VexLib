@@ -4,6 +4,7 @@
 #include "pros/imu.hpp"
 #include "pros/motor_group.hpp"
 #include "pros/rotation.hpp"
+#include "custom/utils.hpp"
 
 // Odometry
 class EncoderOdometry
@@ -11,23 +12,23 @@ class EncoderOdometry
   private:
     pros::MotorGroup& m_leftMotorGroup;
     pros::MotorGroup& m_rightMotorGroup;
-    double m_wheelCirc; // cm
+    double m_wheelDiam; // cm
     double m_gearRatio;
-    double m_lastLeft = m_leftMotorGroup.get_position();;
-    double m_lastRight = m_rightMotorGroup.get_position();
+    double m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());
+    double m_lastRight = averageVector(m_rightMotorGroup.get_position_all());
     double m_lastTime = pros::millis();
     double m_trackWidth;
+    double m_velocity;
+    Pose m_pose;
 
   public:
-    EncoderOdometry(pros::MotorGroup& leftMotors,
-                    pros::MotorGroup& rightMotors,
-                    double wheelDiam,
-                    double trackWidth,
-                    double gearRatio = 1.0);
+    EncoderOdometry(
+        pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors, double wheelDiam, double trackWidth, double gearRatio = 1.0);
 
     void update();
     void reset();
-    Pose getPose();
+    void setPose(Pose pose);
+    Pose getPose() const;
     double getVelocity();
 };
 
@@ -65,6 +66,7 @@ class TwoWheelOdometry
 
     void update();
     void reset();
+    void setPose();
     Pose getPose();
     double getVelocity();
 };
