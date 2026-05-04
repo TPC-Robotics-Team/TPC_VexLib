@@ -4,8 +4,8 @@
 #include <cmath>
 
 // Differential Drive Class
-DifferentialDrive::DifferentialDrive(pros::MotorGroup& LeftMotors, pros::MotorGroup& RightMotors)
-    : LeftMotors(LeftMotors), RightMotors(RightMotors)
+DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors)
+    : leftMotors(leftMotors), rightMotors(rightMotors)
 {
 }
 
@@ -13,8 +13,8 @@ DifferentialDrive::DifferentialDrive(pros::MotorGroup& LeftMotors, pros::MotorGr
 // One joystick controls an entire side of movement
 void DifferentialDrive::tank(int left, int right)
 {
-    LeftMotors.move_voltage(joystickToVoltage(left));
-    RightMotors.move_voltage(joystickToVoltage(right));
+    leftMotors.move_voltage(joystickToVoltage(left));
+    rightMotors.move_voltage(joystickToVoltage(right));
 }
 
 // Arcade Drive
@@ -34,8 +34,8 @@ void DifferentialDrive::arcade(int throttle, int steer)
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
 
-    LeftMotors.move_voltage(joystickToVoltage(left));
-    RightMotors.move_voltage(joystickToVoltage(right));
+    leftMotors.move_voltage(joystickToVoltage(left));
+    rightMotors.move_voltage(joystickToVoltage(right));
 }
 
 // Curvature Drive
@@ -68,8 +68,8 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
     left += correction;
     right -= correction;
 
-    LeftMotors.move_voltage(joystickToVoltage(left));
-    RightMotors.move_voltage(joystickToVoltage(right));
+    leftMotors.move_voltage(joystickToVoltage(left));
+    rightMotors.move_voltage(joystickToVoltage(right));
 }
 void Intake::set(int power)
 {

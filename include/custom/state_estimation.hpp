@@ -13,20 +13,22 @@ class EncoderOdometry
     pros::MotorGroup& m_rightMotorGroup;
     double m_wheelCirc; // cm
     double m_gearRatio;
-    double m_lastLeft = 0.0;
-    double m_lastRight = 0.0;
-    double m_last_time = 0.0;
-
-    double degreesToCm(double degrees);
+    double m_lastLeft = m_leftMotorGroup.get_position();;
+    double m_lastRight = m_rightMotorGroup.get_position();
+    double m_lastTime = pros::millis();
+    double m_trackWidth;
 
   public:
-    EncoderOdometry(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors, double wheelDiam, double gearRatio = 1.0);
+    EncoderOdometry(pros::MotorGroup& leftMotors,
+                    pros::MotorGroup& rightMotors,
+                    double wheelDiam,
+                    double trackWidth,
+                    double gearRatio = 1.0);
 
-    double getPosition();
-    double getDelta();
-    double getVelocity();
-    Pose getPose();
+    void update();
     void reset();
+    Pose getPose();
+    double getVelocity();
 };
 
 class TwoWheelOdometry
@@ -63,9 +65,6 @@ class TwoWheelOdometry
 
     void update();
     void reset();
-    double getX();
-    double getY();
-    double getTheta();
     Pose getPose();
     double getVelocity();
 };

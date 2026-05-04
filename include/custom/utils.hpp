@@ -24,6 +24,14 @@ int joystickToVoltage(int value);
 /*
 
 Maps [-127, 127] to [-12000, 12000]
+
+*/
+
+double degreesToCm(double degrees, double wheel_diam);
+/*
+
+Given wheel diameter and degrees traveled, return distance in cm.
+
 */
 
 void imuInit(pros::Imu& IMU);
