@@ -71,6 +71,7 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
 }
+//Intake//
 void Intake::set(int power)
 {
     leftintake = power;
