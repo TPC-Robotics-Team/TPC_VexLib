@@ -13,18 +13,15 @@ class EncoderOdometry
     pros::MotorGroup& m_rightMotorGroup;
     double m_wheelCirc; // cm
     double m_gearRatio;
-    double m_lastLeft = 0.0;
-    double m_lastRight = 0.0;
-    double m_last_time = 0.0;
-    double m_track_width;
+    double m_lastLeft = m_leftMotorGroup.get_position();;
+    double m_lastRight = m_rightMotorGroup.get_position();
+    double m_lastTime = pros::millis();
+    double m_trackWidth;
 
   public:
     EncoderOdometry(pros::MotorGroup& leftMotors,
                     pros::MotorGroup& rightMotors,
                     double wheelDiam,
-                    double lastLeft,
-                    double lastRight,
-                    double lastTime,
                     double trackWidth,
                     double gearRatio = 1.0);
 
