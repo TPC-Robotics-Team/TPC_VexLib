@@ -74,6 +74,7 @@ void opcontrol() {
         } else {
             Intake.move_voltage(0);
         }
+        //*If put intake into subsystem.cpp, then only need to recall this function*//
 
         throttle = deadband(throttle);
         steer = deadband(steer);

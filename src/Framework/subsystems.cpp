@@ -73,20 +73,22 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
 }
 
 //Intake//
+Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors)
+{
+}
 void Intake::set(int power)
 {
-    leftintake = power;
-    rightintake = power;
+    IntakeMotors.move_voltage(joystickToVoltage(power));
 }
 void Intake::intake_control()
 {
-    if (pros::controller_digital(pros::E_CONTROLLER_DIGITAL_L1))
+    if (master.get_digital(pros::E_CONTROLLER_DIGITAL_A))
     {
-        set(127);
+        set(127); //*value depends*//
     }
-    else if (pros::controller_digital(pros::E_CONTROLLER_DIGITAL_L2))
+    else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_B)) 
     {
-        set(-127);
+        set(-127);//*value depends*//
     }
     else
     {
