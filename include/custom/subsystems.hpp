@@ -4,11 +4,11 @@
 class DifferentialDrive
 {
   private:
-    pros::MotorGroup& LeftMotors;
-    pros::MotorGroup& RightMotors;
+    pros::MotorGroup& leftMotors;
+    pros::MotorGroup& rightMotors;
 
   public:
-    DifferentialDrive(pros::MotorGroup& LeftMotors, pros::MotorGroup& RightMotors);
+    DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors);
 
     void tank(int left, int right);
     void arcade(int throttle, int steer);

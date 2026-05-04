@@ -31,6 +31,12 @@ int joystickToVoltage(int value)
     return value * 12000.0 / MAX_JOYSTICK;
 }
 
+// Converting from degrees turned to centimeters traveled
+double degreesToCm(double degrees, double wheel_diam)
+{
+    return (degrees / 360) * wheel_diam * M_PI;
+}
+
 // IMU Initialisation
 void imuInit(pros::Imu& IMU)
 {
