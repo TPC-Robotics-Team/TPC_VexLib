@@ -28,6 +28,7 @@ void disabled() {}
 
 void competition_initialize() {}
 
+// Autonomous function area
 void autonomous() {
     TrapezoidalProfile profile ({
         .maxVelocity = 60.0,
@@ -54,6 +55,7 @@ void autonomous() {
     }
 }
 
+// Teleop function
 void opcontrol() {
     while (true){
         int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
