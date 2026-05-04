@@ -24,4 +24,4 @@ class Intake
 
     void set(int power);
     void intake_control();
-};
+}; 
