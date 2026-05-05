@@ -96,9 +96,11 @@ void DifferentialDrive::curvature(double correction)
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
-// Intake
+// Intake Class
 
 Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors) {}
+
+// Intake Control
 
 void Intake::intake_control(int voltage)
 {
