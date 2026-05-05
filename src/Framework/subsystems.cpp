@@ -1,6 +1,7 @@
 #include "custom/subsystems.hpp"
 #include "custom/const.hpp"
 #include "custom/utils.hpp"
+#include "custom/config.hpp"
 #include <cmath>
 
 // Differential Drive Class
@@ -72,7 +73,7 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
-//Intake//
+// Intake
 Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors)
 {
 }
