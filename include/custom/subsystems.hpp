@@ -23,6 +23,5 @@ class Intake
   public:
     Intake(pros::MotorGroup& IntakeMotors);
 
-    void set(int power);
-    void intake_control();
+    void intake_control(int voltage);
 };
