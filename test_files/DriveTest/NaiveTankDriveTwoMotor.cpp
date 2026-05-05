@@ -1,15 +1,5 @@
 #include "main.h"
-#include "pros/misc.h"
-#include "drive.hpp"
-
-
-pros::Controller master(pros::E_CONTROLLER_MASTER);
-
-pros::MotorGroup LeftMotors ({1});
-
-pros::MotorGroup RightMotors ({-2});
-
-DifferentialDrive drive(LeftMotors, RightMotors);
+#include "custom/config.hpp"
 
 void initialize() {}
 
