@@ -5,23 +5,33 @@
 #include <cmath>
 
 // Differential Drive Class
+
 DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors)
     : leftMotors(leftMotors), rightMotors(rightMotors)
 {
 }
 
 // Tank Drive
-// One joystick controls an entire side of movement
-void DifferentialDrive::tank(int left, int right)
+
+void DifferentialDrive::tank(double correction)
 {
+    int left = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+    int right = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
+
+    left  = std::clamp(left  + correction, -127.0, 127.0);
+    right = std::clamp(right - correction, -127.0, 127.0);
+
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
 // Arcade Drive
-// One joystick controls throttle, and the other controls steer
-void DifferentialDrive::arcade(int throttle, int steer)
+
+void DifferentialDrive::arcade(double correction)
 {
+    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+    int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+
     int left, right;
 
     left = throttle + steer;
@@ -35,14 +45,24 @@ void DifferentialDrive::arcade(int throttle, int steer)
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
 
+    left += correction;
+    right -= correction;
+
+    left  = std::clamp(left  + correction, -127.0, 127.0);
+    right = std::clamp(right - correction, -127.0, 127.0);
+
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
 // Curvature Drive
-// Arcade Drive, but with a curvature term to make steering smooth
-void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, double correction)
+
+void DifferentialDrive::curvature(double correction)
 {
+    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+    int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+    bool quickTurn = master.get_digital(pros::E_CONTROLLER_DIGITAL_L1);
+
     double left, right;
 
     if (quickTurn || throttle == 0)
@@ -69,15 +89,16 @@ void DifferentialDrive::curvature(int throttle, int steer, bool quickTurn, doubl
     left += correction;
     right -= correction;
 
+    left  = std::clamp(left  + correction, -127.0, 127.0);
+    right = std::clamp(right - correction, -127.0, 127.0);
+
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
 // Intake
-Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors)
-{
-}
 
+Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors) {}
 
 void Intake::intake_control(int voltage)
 {
@@ -85,7 +106,7 @@ void Intake::intake_control(int voltage)
     {
         IntakeMotors.move_voltage(voltage);
     }
-    else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_B)) 
+    else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_B))
     {
         IntakeMotors.move_voltage(-voltage);
     }

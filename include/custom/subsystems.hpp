@@ -10,9 +10,9 @@ class DifferentialDrive
   public:
     DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors);
 
-    void tank(int left, int right);
-    void arcade(int throttle, int steer);
-    void curvature(int throttle, int steer, bool quickTurn, double correction = 0);
+    void tank(double correction = 0);
+    void arcade(double correction = 0);
+    void curvature(double correction = 0);
 };
 
 class Intake
@@ -23,5 +23,5 @@ class Intake
   public:
     Intake(pros::MotorGroup& IntakeMotors);
 
-    void intake_control(int voltage);
+    void intake_control(int voltage = 12000);
 };

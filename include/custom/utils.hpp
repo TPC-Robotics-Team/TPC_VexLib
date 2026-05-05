@@ -4,7 +4,7 @@
 double wrapAngle(double x);
 /*
 
-Wraps the angle of rotation to always be in [-360, 360]
+Wraps the angle of rotation to always be in [0, 360]
 
 */
 

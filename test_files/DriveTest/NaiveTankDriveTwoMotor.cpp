@@ -9,13 +9,12 @@ void competition_initialize() {}
 
 void autonomous() {}
 
-void opcontrol() {
-    while (true){
-        int left = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
-        int right = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
+void opcontrol()
+{
+    while (true)
+    {
+        drive.tank();
 
-        drive.tank(left, right);
-
-       pros::delay(20);
+        pros::delay(20);
     }
 }
