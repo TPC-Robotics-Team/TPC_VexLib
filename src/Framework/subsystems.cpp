@@ -45,9 +45,6 @@ void DifferentialDrive::arcade(double correction)
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
 
-    left += correction;
-    right -= correction;
-
     left  = std::clamp(left  + correction, -127.0, 127.0);
     right = std::clamp(right - correction, -127.0, 127.0);
 
@@ -85,9 +82,6 @@ void DifferentialDrive::curvature(double correction)
         left = left * MAX_JOYSTICK / maxMagnitude;
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
-
-    left += correction;
-    right -= correction;
 
     left  = std::clamp(left  + correction, -127.0, 127.0);
     right = std::clamp(right - correction, -127.0, 127.0);

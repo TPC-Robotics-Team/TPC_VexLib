@@ -22,8 +22,6 @@ class HeadingHold
 
 /*
 
-Heading Hold
-
 Maintains heading in autonomous and assistive teleOp
 
 */ 

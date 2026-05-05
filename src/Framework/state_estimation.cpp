@@ -51,6 +51,11 @@ void EncoderOdometry::update()
     m_lastTime = now;
 }
 
+void EncoderOdometry::reset()
+{
+    
+}
+
 void EncoderOdometry::setPose(Pose pose)
 {
     m_pose = pose;
