@@ -1,4 +1,5 @@
 #include "custom/control.hpp"
+#include "custom/assistive_teleop.hpp"
 
 #include <algorithm>
 #include <cmath>
@@ -39,6 +40,27 @@ double SlewLimiter::update(double input)
 void SlewLimiter::reset(double value)
 {
     prev = value;
+}
+
+// Bang Bang control
+BangBang::BangBang(double setpoint, double correction) : m_setpoint(setpoint), m_correction(correction) {}
+
+double BangBang::update(double variable)
+{
+    double error = m_setpoint - variable;
+
+    error = deadband(error);
+
+    if (error > 0)
+    {
+        return m_correction;
+    }
+    else if (error < 0)
+    {
+        return -m_correction;
+    }
+    else
+        return 0;
 }
 
 // PID

@@ -16,6 +16,18 @@ class SlewLimiter
     void reset(double value = 0);
 };
 
+class BangBang
+{
+  private:
+    double m_setpoint;
+    double m_correction;
+
+  public:
+    BangBang(double setpoint, double correction);
+
+    double update(double variable);
+};
+
 // PID controller
 class PID
 {

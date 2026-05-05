@@ -53,7 +53,11 @@ void EncoderOdometry::update()
 
 void EncoderOdometry::reset()
 {
-    
+    m_pose = {0,0,0};
+
+    m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());
+    m_lastRight = averageVector(m_rightMotorGroup.get_position_all());
+    m_lastTime = pros::millis();
 }
 
 void EncoderOdometry::setPose(Pose pose)
@@ -62,4 +66,14 @@ void EncoderOdometry::setPose(Pose pose)
     m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());
     m_lastRight = averageVector(m_rightMotorGroup.get_position_all());
     m_lastTime = pros::millis();
+}
+
+Pose EncoderOdometry::getPose() const
+{
+    return m_pose;
+}
+
+double EncoderOdometry::getVelocity()
+{
+    return m_velocity;
 }
