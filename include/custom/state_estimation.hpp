@@ -1,6 +1,7 @@
 #pragma once
 #include "cmath"
 #include "const.hpp"
+#include "config.hpp"
 #include "pros/imu.hpp"
 #include "pros/motor_group.hpp"
 #include "pros/rotation.hpp"
@@ -12,13 +13,13 @@ class EncoderOdometry
   private:
     pros::MotorGroup& m_leftMotorGroup;
     pros::MotorGroup& m_rightMotorGroup;
-    pros::IMU& m_imu;
     double m_wheelDiam; // cm
     double m_gearRatio;
     double m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());
     double m_lastRight = averageVector(m_rightMotorGroup.get_position_all());
     double m_lastTime = pros::millis();
     double m_trackWidth;
+    double m_lastHeading = 0.0;
     double m_velocity;
     Pose m_pose;
 

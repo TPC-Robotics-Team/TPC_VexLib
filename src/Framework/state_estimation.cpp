@@ -1,5 +1,6 @@
 #include "custom/state_estimation.hpp"
 #include "custom/utils.hpp"
+#include "custom/config.hpp"
 
 // Constructor
 EncoderOdometry::EncoderOdometry(
@@ -20,6 +21,7 @@ void EncoderOdometry::update()
 
     double avgLeft = averageVector(leftPositions);
     double avgRight = averageVector(rightPositions);
+    double imuHeading = wrapAngle(IMU.get_rotation()) * M_PI / 180.0;
 
     double dLeft = avgLeft - m_lastLeft;
     double dRight = avgRight - m_lastRight;
@@ -29,31 +31,35 @@ void EncoderOdometry::update()
     double dR = degreesToCm(dRight, m_wheelDiam) / m_gearRatio;
 
     double dC = (dL + dR) / 2;
-    double dHeading = (dR - dL) / m_trackWidth;
+    double dEncoderHeading = (dR - dL) / m_trackWidth; // From encoders
+
+    m_pose.heading = complementary(imuHeading, m_pose.heading + dEncoderHeading, 0.98);
+
+    double dHeading = m_pose.heading - m_lastHeading;
 
     if (fabs(dHeading) > 1e-6)
     {
         double r = dC / dHeading; // Radius of curvature
-        m_pose.x += r * (sin(m_pose.heading + dHeading) - sin(m_pose.heading));
-        m_pose.y += r * (-cos(m_pose.heading + dHeading) + cos(m_pose.heading));
+        m_pose.x += r * (sin(m_lastHeading + dHeading) - sin(m_lastHeading));
+        m_pose.y += r * (-cos(m_lastHeading + dHeading) + cos(m_lastHeading));
     }
     else
     {
-        m_pose.x += dC * cos(m_pose.heading + dHeading / 2.0);
-        m_pose.y += dC * sin(m_pose.heading + dHeading / 2.0);
+        m_pose.x += dC * cos(m_lastHeading + dHeading / 2.0);
+        m_pose.y += dC * sin(m_lastHeading + dHeading / 2.0);
     }
-    m_pose.heading += dHeading;
 
     m_velocity = (dt > 0) ? (dC / dt) : 0.0;
 
     m_lastLeft = avgLeft;
     m_lastRight = avgRight;
     m_lastTime = now;
+    m_lastHeading = m_pose.heading;
 }
 
 void EncoderOdometry::reset()
 {
-    m_pose = {0,0,0};
+    m_pose = {0, 0, 0};
 
     m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());
     m_lastRight = averageVector(m_rightMotorGroup.get_position_all());
