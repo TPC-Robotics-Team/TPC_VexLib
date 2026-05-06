@@ -5,7 +5,11 @@
 #include "custom/assistive_teleop.hpp"
 #include <cmath>
 
-// Differential Drive Class
+/*
+
+Differential Drive Class
+
+*/
 
 DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors)
     : leftMotors(leftMotors), rightMotors(rightMotors)
@@ -109,7 +113,11 @@ void DifferentialDrive::curvature(bool useHeadingHold)
     rightMotors.move_voltage(joystickToVoltage(right));
 }
 
-// Intake Class
+/*
+
+Intake Class
+
+*/
 
 Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors) {}
 

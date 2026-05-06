@@ -12,6 +12,7 @@ class EncoderOdometry
   private:
     pros::MotorGroup& m_leftMotorGroup;
     pros::MotorGroup& m_rightMotorGroup;
+    pros::IMU& m_imu;
     double m_wheelDiam; // cm
     double m_gearRatio;
     double m_lastLeft = averageVector(m_leftMotorGroup.get_position_all());

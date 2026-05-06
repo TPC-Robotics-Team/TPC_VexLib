@@ -60,3 +60,6 @@ class FeedForward
 
     double calculate(double velocity, double accel);
 };
+
+// Complementary Filter
+double complementary(double longterm, double shortterm, double coefficient);

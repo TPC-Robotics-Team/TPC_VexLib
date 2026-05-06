@@ -4,7 +4,11 @@
 #include <algorithm>
 #include <cmath>
 
-// Slew Delimitation Class
+/*
+
+Slew Delimitation Class
+
+*/
 SlewLimiter::SlewLimiter(double accel, double decel)
 {
     this->accel = accel;
@@ -63,7 +67,11 @@ double BangBang::update(double variable)
         return 0;
 }
 
-// PID
+/*
+
+PID Class
+
+*/
 PID::PID(double p, double i, double d, double iZone, double iMax, double outputLimit)
     : kP(p), kI(i), kD(d), integral(0), integralZone(iZone), integralLimit(iMax), prevMeasurement(0), outputLimit(outputLimit)
 {
@@ -97,7 +105,12 @@ void PID::reset()
     prevMeasurement = 0;
 }
 
-// Feedforward
+/*
+
+FeedForward Class
+
+*/
+
 FeedForward::FeedForward(double kS, double kV, double kA)
 {
     this->kS = kS;
@@ -123,4 +136,9 @@ double FeedForward::calculate(double velocity, double accel)
     output += kS * sign(velocity) + kV * velocity + kA * accel;
 
     return output;
+}
+
+double complementary(double longterm, double shortterm, double coefficient)
+{
+    return coefficient * longterm + (1 - coefficient) * shortterm;
 }
