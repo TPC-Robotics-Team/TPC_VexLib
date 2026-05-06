@@ -10,9 +10,9 @@ class DifferentialDrive
   public:
     DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors);
 
-    void tank(double correction = 0);
-    void arcade(double correction = 0);
-    void curvature(double correction = 0);
+    void tank(bool useHeadingHold = false);
+    void arcade(bool useHeadingHold = false);
+    void curvature(bool useHeadingHold = false);
 };
 
 class Intake

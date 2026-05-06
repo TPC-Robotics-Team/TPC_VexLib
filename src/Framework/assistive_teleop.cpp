@@ -2,6 +2,7 @@
 #include "custom/const.hpp"
 #include "custom/utils.hpp"
 
+
 #include <cmath>
 
 // Joystick Deadband
@@ -22,7 +23,7 @@ double deadband(double value, double threshold)
 // Cubic Input Shaping
 // Shapes inputs to add weight to high speeds and control in lower speeds
 
-double shapeInput(double input, double a)
+double shapeInput(double input, double a) // a in [0,1]
 {
     double x = input / MAX_JOYSTICK;
     double shaped = a * x * x * x + (1 - a) * x;
@@ -42,7 +43,7 @@ double HeadingHold::update(double throttleInput, double steerInput)
     if ((std::abs(steerInput) > deadband))
     {
         controller.reset();
-        return steerInput;
+        return 0.0;
     }
 
     if (!enabled)

@@ -2,6 +2,7 @@
 #include "custom/const.hpp"
 #include "custom/utils.hpp"
 #include "custom/config.hpp"
+#include "custom/assistive_teleop.hpp"
 #include <cmath>
 
 // Differential Drive Class
@@ -13,13 +14,21 @@ DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGr
 
 // Tank Drive
 
-void DifferentialDrive::tank(double correction)
+void DifferentialDrive::tank(bool useHeadingHold)
 {
     int left = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int right = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
 
-    left  = std::clamp(left  + correction, -127.0, 127.0);
-    right = std::clamp(right - correction, -127.0, 127.0);
+    if (useHeadingHold)
+    {
+        double throttle = (left + right) / 2.0;
+        double steer = (right - left) / 2.0;
+
+        double correction = headinghold.update(throttle, steer);
+
+        left = std::clamp(left + correction, -127.0, 127.0);
+        right = std::clamp(right - correction, -127.0, 127.0);
+    }
 
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
@@ -27,7 +36,7 @@ void DifferentialDrive::tank(double correction)
 
 // Arcade Drive
 
-void DifferentialDrive::arcade(double correction)
+void DifferentialDrive::arcade(bool useHeadingHold)
 {
     int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
@@ -45,8 +54,13 @@ void DifferentialDrive::arcade(double correction)
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
 
-    left  = std::clamp(left  + correction, -127.0, 127.0);
-    right = std::clamp(right - correction, -127.0, 127.0);
+    if (useHeadingHold)
+    {
+        double correction = headinghold.update(throttle, steer);
+
+        left = std::clamp(left + correction, -127.0, 127.0);
+        right = std::clamp(right - correction, -127.0, 127.0);
+    }
 
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
@@ -54,7 +68,7 @@ void DifferentialDrive::arcade(double correction)
 
 // Curvature Drive
 
-void DifferentialDrive::curvature(double correction)
+void DifferentialDrive::curvature(bool useHeadingHold)
 {
     int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
@@ -83,8 +97,13 @@ void DifferentialDrive::curvature(double correction)
         right = right * MAX_JOYSTICK / maxMagnitude;
     }
 
-    left  = std::clamp(left  + correction, -127.0, 127.0);
-    right = std::clamp(right - correction, -127.0, 127.0);
+    if (useHeadingHold && !quickTurn && throttle != 0)
+    {
+        double correction = headinghold.update(throttle, steer);
+
+        left = std::clamp(left + correction, -127.0, 127.0);
+        right = std::clamp(right - correction, -127.0, 127.0);
+    }
 
     leftMotors.move_voltage(joystickToVoltage(left));
     rightMotors.move_voltage(joystickToVoltage(right));
