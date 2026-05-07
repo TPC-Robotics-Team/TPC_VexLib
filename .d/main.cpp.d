@@ -663,7 +663,8 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/pros/screen.hpp include/pros/screen.h include/pros/vision.hpp \
  include/pros/vision.h include/custom/config.hpp \
  include/pros/motor_group.hpp include/custom/control.hpp \
- include/custom/subsystems.hpp
+ include/custom/subsystems.hpp include/custom/assistive_teleop.hpp \
+ include/pros/imu.hpp
 include/main.h:
 include/api.h:
 include/pros/adi.h:
@@ -1402,3 +1403,5 @@ include/custom/config.hpp:
 include/pros/motor_group.hpp:
 include/custom/control.hpp:
 include/custom/subsystems.hpp:
+include/custom/assistive_teleop.hpp:
+include/pros/imu.hpp:

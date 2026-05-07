@@ -1,7 +1,6 @@
 #pragma once
 #include "cmath"
 #include "const.hpp"
-#include "config.hpp"
 #include "pros/imu.hpp"
 #include "pros/motor_group.hpp"
 #include "pros/rotation.hpp"
@@ -39,7 +38,6 @@ class TwoWheelOdometry
   private:
     pros::Rotation& m_parallel;
     pros::Rotation& m_perpendicular;
-    pros::Imu& m_imu;
 
     double m_wheel_circ;
 
