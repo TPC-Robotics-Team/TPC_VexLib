@@ -5,8 +5,8 @@ int IMU_PORT;
 
 pros::Controller master(pros::E_CONTROLLER_MASTER);
 
-pros::MotorGroup LeftMotors({});
-pros::MotorGroup RightMotors({});
+pros::MotorGroup LeftMotors({1});
+pros::MotorGroup RightMotors({-2});
 pros::MotorGroup Intake({});
 pros::Imu IMU(IMU_PORT);
 

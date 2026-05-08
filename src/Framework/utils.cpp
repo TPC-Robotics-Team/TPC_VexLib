@@ -24,7 +24,7 @@ double angleError(double target, double current)
 
 int joystickToVoltage(int value)
 {
-    return value * 12000.0 / MAX_JOYSTICK;
+    return value * MAX_MILIVOLTS / MAX_JOYSTICK;
 }
 
 double degreesToCm(double degrees, double wheel_diam)

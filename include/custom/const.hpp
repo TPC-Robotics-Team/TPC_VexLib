@@ -3,6 +3,7 @@
 
 constexpr double DEG_TO_RAD = M_PI / 180;
 constexpr double MAX_JOYSTICK = 127.0;
+constexpr double MAX_MILIVOLTS = 12000.0;
 
 struct Pose
 {

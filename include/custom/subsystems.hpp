@@ -1,5 +1,6 @@
 #pragma once
 #include "pros/motor_group.hpp"
+#include "custom/const.hpp"
 
 class DifferentialDrive
 {
@@ -10,9 +11,9 @@ class DifferentialDrive
   public:
     DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors);
 
-    void tank(bool useHeadingHold = true);
-    void arcade(bool useHeadingHold = true);
-    void curvature(bool useHeadingHold = true);
+    void tank(bool useHeadingHold = false);
+    void arcade(bool useHeadingHold = false);
+    void curvature(bool useHeadingHold = false);
 };
 
 class Intake
@@ -23,5 +24,17 @@ class Intake
   public:
     Intake(pros::MotorGroup& IntakeMotors);
 
-    void intake_control(int voltage = 12000);
+    void intake_control(int voltage = MAX_MILIVOLTS);
+};
+
+class OneDOFClaw
+{
+  private:
+    pros::MotorGroup& m_pivot;
+    pros::Motor& m_claw;
+    double m_gear_ratio;
+
+  public:
+    OneDOFClaw(pros::MotorGroup& pivot, pros::Motor& claw, double m_gear_ratio = 1);
+   
 };

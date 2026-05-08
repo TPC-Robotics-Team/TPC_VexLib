@@ -10,4 +10,12 @@ void competition_initialize() {}
 
 void autonomous() {}
 
-void opcontrol() {}
+void opcontrol()
+{
+    while (true)
+    {
+        drive.tank();
+
+        pros::delay(20);
+    }
+}

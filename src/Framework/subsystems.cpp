@@ -74,7 +74,7 @@ void DifferentialDrive::arcade(bool useHeadingHold)
 
 void DifferentialDrive::curvature(bool useHeadingHold)
 {
-    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
     int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
     bool quickTurn = master.get_digital(pros::E_CONTROLLER_DIGITAL_L1);
 
