@@ -105,8 +105,8 @@ void DifferentialDrive::curvature(bool useHeadingHold)
     else
     {
         double steerNorm = (double)steer / MAX_JOYSTICK;
-        left = throttle * (1 + steerNorm);
-        right = throttle * (1 - steerNorm);
+        left = throttle + std::abs(throttle) * steerNorm;
+        right = throttle - std::abs(throttle) * steerNorm;
     }
 
     double maxMagnitude = fmax(std::abs(left), std::abs(right));
