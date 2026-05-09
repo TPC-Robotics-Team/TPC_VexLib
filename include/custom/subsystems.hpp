@@ -1,15 +1,25 @@
 #pragma once
 #include "pros/motor_group.hpp"
 #include "custom/const.hpp"
+#include "custom/control.hpp"
+#include "custom/assistive_teleop.hpp"
+#include "pros/imu.hpp"
 
 class DifferentialDrive
 {
   private:
     pros::MotorGroup& leftMotors;
     pros::MotorGroup& rightMotors;
+    pros::Imu& driveIMU;
+
+    SlewLimiter throttlelimit{5, 10};
+    SlewLimiter steerlimit{5, 10};
+
+    PID headingPID{0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    HeadingHold headinghold{driveIMU, headingPID};
 
   public:
-    DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors);
+    DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors, pros::Imu& driveIMU);
 
     void tank(bool useHeadingHold = false);
     void arcade(bool useHeadingHold = false);
@@ -24,26 +34,28 @@ class Intake
   public:
     Intake(pros::MotorGroup& IntakeMotors);
 
-    void intake_control(int voltage = MAX_MILIVOLTS);
+    void intakeControl(int voltage = MAX_MILIVOLTS);
 };
 
-class OneDOFClaw
+enum class ClawState
+{
+    Open,
+    Closed
+};
+
+class OneDOFArm
 {
   private:
     pros::Motor& m_pivot;
     pros::Motor& m_claw;
     double m_gear_ratio;
-
-    const double ARM_MIN_DEG = 0.0;
-    const double ARM_MAX_DEG;
-    const double ARM_SOFT_MIN = 5.0;
-    const double ARM_SOFT_MAX;
-    const double ARM_HORIZONTAL_DEG;
+    ClawState m_claw_state;
 
   public:
-    OneDOFClaw(pros::Motor& pivot, pros::Motor& claw, double m_gear_ratio = 1);
+    OneDOFArm(pros::Motor& pivot, pros::Motor& claw, double m_gear_ratio = 1);
 
-    void homeArm();
+    void armInitialise();
+    void armControl();
+    void clawControl();
     void setArmPosition();
-   
 };

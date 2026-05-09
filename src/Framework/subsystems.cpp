@@ -11,8 +11,8 @@ Differential Drive Class
 
 */
 
-DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors)
-    : leftMotors(leftMotors), rightMotors(rightMotors)
+DifferentialDrive::DifferentialDrive(pros::MotorGroup& leftMotors, pros::MotorGroup& rightMotors, pros::Imu& driveIMU)
+    : leftMotors(leftMotors), rightMotors(rightMotors), driveIMU(driveIMU)
 {
 }
 
@@ -139,7 +139,7 @@ Intake::Intake(pros::MotorGroup& IntakeMotors) : IntakeMotors(IntakeMotors) {}
 
 // Intake Control
 
-void Intake::intake_control(int voltage)
+void Intake::intakeControl(int voltage)
 {
     if (master.get_digital(pros::E_CONTROLLER_DIGITAL_A))
     {
@@ -153,4 +153,27 @@ void Intake::intake_control(int voltage)
     {
         IntakeMotors.move_voltage(0);
     }
+}
+
+/*
+
+One Degree of Freedom Claw Class
+
+*/
+
+OneDOFArm::OneDOFArm(pros::Motor& pivot, pros::Motor& claw, double gear_ratio)
+    : m_pivot(pivot), m_claw(claw), m_gear_ratio(gear_ratio), m_claw_state(ClawState::Open)
+{
+}
+
+void OneDOFArm::armInitialise()
+{
+    m_pivot.tare_position();
+    m_claw.tare_position();
+
+    m_pivot.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
+    m_claw.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
+
+    m_claw.move_absolute(CLAW_OPEN_POS, ARM_SPEED);
+    m_claw_state = ClawState::Open;
 }
