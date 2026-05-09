@@ -12,7 +12,8 @@ pros::Imu IMU(IMU_PORT);
 
 DifferentialDrive drive(LeftMotors, RightMotors);
 
-SlewLimiter slewlimit(5, 7);
+SlewLimiter throttlelimit(5, 10);
+SlewLimiter steerlimit(5, 10);
 
 PID headingPID(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 HeadingHold headinghold(IMU, headingPID);

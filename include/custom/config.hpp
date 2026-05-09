@@ -13,6 +13,7 @@ extern pros::Imu IMU;
 extern pros::MotorGroup Intake;
 extern DifferentialDrive drive;
 
-extern SlewLimiter slewlimit;
+extern SlewLimiter throttlelimit;
+extern SlewLimiter steerlimit;
 extern PID headingPID;
 extern HeadingHold headinghold;

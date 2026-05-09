@@ -23,6 +23,12 @@ void DifferentialDrive::tank(bool useHeadingHold)
     int left = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int right = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
 
+    left = shapeInput(left);
+    right = shapeInput(right);
+
+    left = throttlelimit.update(left);
+    right = steerlimit.update(right);
+
     if (useHeadingHold)
     {
         double throttle = (left + right) / 2.0;
@@ -45,10 +51,14 @@ void DifferentialDrive::arcade(bool useHeadingHold)
     int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
 
-    int left, right;
+    throttle = shapeInput(throttle);
+    steer = shapeInput(steer);
 
-    left = throttle + steer;
-    right = throttle - steer;
+    throttle = throttlelimit.update(throttle);
+    steer = steerlimit.update(steer);
+
+    int left = throttle + steer;
+    int right = throttle - steer;
 
     double maxMagnitude = fmax(std::abs(left), std::abs(right));
 
@@ -74,9 +84,15 @@ void DifferentialDrive::arcade(bool useHeadingHold)
 
 void DifferentialDrive::curvature(bool useHeadingHold)
 {
-    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
+    int throttle = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
     int steer = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
     bool quickTurn = master.get_digital(pros::E_CONTROLLER_DIGITAL_L1);
+
+    throttle = shapeInput(throttle);
+    steer = shapeInput(steer);
+
+    throttle = throttlelimit.update(throttle);
+    steer = steerlimit.update(steer);
 
     double left, right;
 

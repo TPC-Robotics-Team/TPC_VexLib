@@ -30,11 +30,20 @@ class Intake
 class OneDOFClaw
 {
   private:
-    pros::MotorGroup& m_pivot;
+    pros::Motor& m_pivot;
     pros::Motor& m_claw;
     double m_gear_ratio;
 
+    const double ARM_MIN_DEG = 0.0;
+    const double ARM_MAX_DEG;
+    const double ARM_SOFT_MIN = 5.0;
+    const double ARM_SOFT_MAX;
+    const double ARM_HORIZONTAL_DEG;
+
   public:
-    OneDOFClaw(pros::MotorGroup& pivot, pros::Motor& claw, double m_gear_ratio = 1);
+    OneDOFClaw(pros::Motor& pivot, pros::Motor& claw, double m_gear_ratio = 1);
+
+    void homeArm();
+    void setArmPosition();
    
 };
