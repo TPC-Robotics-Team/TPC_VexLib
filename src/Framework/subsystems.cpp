@@ -177,3 +177,42 @@ void OneDOFArm::armInitialise()
     m_claw.move_absolute(CLAW_OPEN_POS, ARM_SPEED);
     m_claw_state = ClawState::Open;
 }
+
+void OneDOFArm::armControl()
+{
+    if (master.get_digital(pros::E_CONTROLLER_DIGITAL_UP))
+    {
+        m_pivot.move_velocity(ARM_SPEED);
+    }
+    else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_DOWN))
+    {
+        m_pivot.move_velocity(-ARM_SPEED);
+    }
+    else
+    {
+        m_pivot.move_velocity(0);
+    }
+}
+
+void OneDOFArm::clawControl()
+{
+    if (master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A))
+    {
+        if (m_claw_state == ClawState::Open)
+        {
+            m_claw.move_absolute(CLAW_CLOSED_POS, ARM_SPEED);
+            m_claw_state = ClawState::Closed;
+        }
+        else
+        {
+            m_claw.move_absolute(CLAW_OPEN_POS, ARM_SPEED);
+            m_claw_state = ClawState::Open;
+        }
+    }
+}
+
+void OneDOFArm::setArmPosition(double deg)
+{
+    double motorDeg = deg * m_gear_ratio;
+    m_pivot.move_absolute(motorDeg, ARM_SPEED);
+}

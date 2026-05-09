@@ -50,6 +50,7 @@ class OneDOFArm
     pros::Motor& m_claw;
     double m_gear_ratio;
     ClawState m_claw_state;
+    SlewLimiter armLimiter{5, 10};
 
   public:
     OneDOFArm(pros::Motor& pivot, pros::Motor& claw, double m_gear_ratio = 1);
@@ -57,5 +58,5 @@ class OneDOFArm
     void armInitialise();
     void armControl();
     void clawControl();
-    void setArmPosition();
+    void setArmPosition(double deg);
 };

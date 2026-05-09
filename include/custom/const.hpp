@@ -15,4 +15,4 @@ struct Pose
 static constexpr int   ARM_SPEED       = 100;   // RPM
 static constexpr int   CLAW_OPEN_POS   = 0;     // degrees
 static constexpr int   CLAW_CLOSED_POS = 90;    
-static constexpr int   CLAW_HOLD_VOLT  = 20; 
+static constexpr int   CLAW_HOLD_MILIVOLT  = 20; 
