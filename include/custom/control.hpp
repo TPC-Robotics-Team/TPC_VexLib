@@ -63,3 +63,17 @@ class FeedForward
 
 // Complementary Filter
 double complementary(double longterm, double shortterm, double coefficient);
+
+class EMAFilter
+{
+  private:
+    double alpha;
+    double y;
+    bool initialised;
+
+  public:
+    EMAFilter(double alpha);
+
+    double update(double input);
+    void reset(double value = 0);
+};

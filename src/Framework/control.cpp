@@ -142,3 +142,25 @@ double complementary(double longterm, double shortterm, double coefficient)
 {
     return coefficient * longterm + (1 - coefficient) * shortterm;
 }
+
+EMAFilter::EMAFilter(double alpha) : alpha(alpha), y(0), initialised(false) {}
+
+double EMAFilter::update(double x)
+{
+    if (!initialised)
+    {
+        y = x;
+        initialised = true;
+    }
+    else
+    {
+        y = alpha * x + (1 - alpha) * y;
+    }
+    return y;
+}
+
+void EMAFilter::reset(double value)
+{
+    y = value;
+    initialised = false;
+}

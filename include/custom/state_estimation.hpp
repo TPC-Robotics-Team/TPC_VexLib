@@ -1,6 +1,7 @@
 #pragma once
 #include "cmath"
 #include "const.hpp"
+#include "control.hpp"
 #include "pros/imu.hpp"
 #include "pros/motor_group.hpp"
 #include "pros/rotation.hpp"
@@ -20,6 +21,7 @@ class EncoderOdometry
     double m_trackWidth;
     double m_lastHeading = 0.0;
     double m_velocity;
+    EMAFilter m_velocityFilter{0.1};
     Pose m_pose;
 
   public:

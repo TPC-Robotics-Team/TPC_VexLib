@@ -21,7 +21,7 @@ void EncoderOdometry::update()
 
     double avgLeft = averageVector(leftPositions);
     double avgRight = averageVector(rightPositions);
-    double imuHeading = wrapAngle(IMU.get_rotation()) * M_PI / 180.0;
+    double imuHeading = wrapAngle(driveIMU.get_rotation()) * M_PI / 180.0;
 
     double dLeft = avgLeft - m_lastLeft;
     double dRight = avgRight - m_lastRight;
@@ -50,6 +50,8 @@ void EncoderOdometry::update()
     }
 
     m_velocity = (dt > 0) ? (dC / dt) : 0.0;
+
+    m_velocity = m_velocityFilter.update(m_velocity);
 
     m_lastLeft = avgLeft;
     m_lastRight = avgRight;
