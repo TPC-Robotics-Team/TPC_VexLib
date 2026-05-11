@@ -4,11 +4,17 @@
 #include "pros/imu.hpp"
 
 extern pros::Controller master;
+
 extern pros::MotorGroup LeftMotors;
 extern pros::MotorGroup RightMotors;
+extern pros::MotorGroup IntakeMotors;
+extern pros::Motor PivotMotor;
+extern pros::Motor ClawMotor;
+
 extern pros::Imu driveIMU;
 
-extern pros::MotorGroup Intake;
 extern DifferentialDrive drive;
+extern Intake intake;
+extern OneDOFArm arm;
 
 

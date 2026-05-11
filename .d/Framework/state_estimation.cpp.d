@@ -7,7 +7,7 @@ bin/Framework/state_estimation.cpp.o: src/Framework/state_estimation.cpp \
  include/pros/rtos.hpp include/pros/colors.hpp include/pros/motors.hpp \
  include/pros/rotation.hpp include/pros/rotation.h \
  include/custom/utils.hpp include/custom/config.hpp \
- include/custom/control.hpp include/custom/subsystems.hpp \
+ include/custom/subsystems.hpp include/custom/control.hpp \
  include/custom/assistive_teleop.hpp
 include/custom/state_estimation.hpp:
 include/custom/const.hpp:
@@ -28,6 +28,6 @@ include/pros/rotation.hpp:
 include/pros/rotation.h:
 include/custom/utils.hpp:
 include/custom/config.hpp:
-include/custom/control.hpp:
 include/custom/subsystems.hpp:
+include/custom/control.hpp:
 include/custom/assistive_teleop.hpp:

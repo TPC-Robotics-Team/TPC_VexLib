@@ -662,8 +662,8 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/pros/rotation.hpp include/pros/rotation.h include/pros/rtos.hpp \
  include/pros/screen.hpp include/pros/screen.h include/pros/vision.hpp \
  include/pros/vision.h include/custom/config.hpp \
- include/pros/motor_group.hpp include/custom/control.hpp \
- include/custom/subsystems.hpp include/custom/const.hpp \
+ include/pros/motor_group.hpp include/custom/subsystems.hpp \
+ include/custom/const.hpp include/custom/control.hpp \
  include/custom/assistive_teleop.hpp include/pros/imu.hpp
 include/main.h:
 include/api.h:
@@ -1401,8 +1401,8 @@ include/pros/vision.hpp:
 include/pros/vision.h:
 include/custom/config.hpp:
 include/pros/motor_group.hpp:
-include/custom/control.hpp:
 include/custom/subsystems.hpp:
 include/custom/const.hpp:
+include/custom/control.hpp:
 include/custom/assistive_teleop.hpp:
 include/pros/imu.hpp:
