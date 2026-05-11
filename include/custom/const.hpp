@@ -19,6 +19,17 @@ struct DifferentialDriveState
     double angularVelocity;
 };
 
+struct WaypointVel {
+    Pose pose;
+    double dx, dy;         // tangent vector    
+};
+
+struct WaypointAccel {
+    Pose pose;
+    double dx, dy;         // tangent vector
+    double ddx, ddy;       // curvature vector
+};
+
 static constexpr int   ARM_SPEED       = 100;   // RPM
 static constexpr int   CLAW_OPEN_POS   = 0;     // degrees
 static constexpr int   CLAW_CLOSED_POS = 90;    
