@@ -13,6 +13,12 @@ struct Pose
     double heading;
 };
 
+struct DifferentialDriveState
+{
+    double velocity;
+    double angularVelocity;
+};
+
 static constexpr int   ARM_SPEED       = 100;   // RPM
 static constexpr int   CLAW_OPEN_POS   = 0;     // degrees
 static constexpr int   CLAW_CLOSED_POS = 90;    

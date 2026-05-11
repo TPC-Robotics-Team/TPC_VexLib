@@ -21,6 +21,7 @@ class EncoderOdometry
     double m_trackWidth;
     double m_lastHeading = 0.0;
     double m_velocity;
+    double m_angularVelocity;
     EMAFilter m_velocityFilter{0.1};
     Pose m_pose;
 
@@ -32,7 +33,7 @@ class EncoderOdometry
     void reset();
     void setPose(Pose pose);
     Pose getPose() const;
-    double getVelocity();
+    DifferentialDriveState getVelocity();
 };
 
 class TwoWheelOdometry

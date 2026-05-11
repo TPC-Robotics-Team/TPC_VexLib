@@ -50,8 +50,10 @@ void EncoderOdometry::update()
     }
 
     m_velocity = (dt > 0) ? (dC / dt) : 0.0;
-
     m_velocity = m_velocityFilter.update(m_velocity);
+
+    m_angularVelocity = (dt > 0) ? (dHeading / dt) : 0.0;
+    m_angularVelocity = m_velocityFilter.update(m_angularVelocity);
 
     m_lastLeft = avgLeft;
     m_lastRight = avgRight;
@@ -81,7 +83,7 @@ Pose EncoderOdometry::getPose() const
     return m_pose;
 }
 
-double EncoderOdometry::getVelocity()
+DifferentialDriveState EncoderOdometry::getVelocity()
 {
-    return m_velocity;
+    return {m_velocity, m_angularVelocity};
 }
