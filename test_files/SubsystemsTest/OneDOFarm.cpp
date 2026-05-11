@@ -8,6 +8,6 @@ void opcontrol()
         arm.armControl();
         arm.clawControl();
 
-        pros::delay(20);
+        pros::delay(LOOP_DELAY);
     }
 }

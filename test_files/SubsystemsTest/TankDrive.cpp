@@ -7,6 +7,6 @@ void opcontrol()
     {
         drive.tank();
 
-        pros::delay(20);
+        pros::delay(LOOP_DELAY);
     }
 }

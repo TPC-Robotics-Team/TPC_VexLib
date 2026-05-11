@@ -67,12 +67,12 @@ double complementary(double longterm, double shortterm, double coefficient);
 class EMAFilter
 {
   private:
-    double alpha;
+    double time;
     double y;
     bool initialised;
 
   public:
-    EMAFilter(double alpha);
+    EMAFilter(double time);
 
     double update(double input);
     void reset(double value = 0);

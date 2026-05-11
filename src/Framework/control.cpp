@@ -1,5 +1,6 @@
 #include "custom/control.hpp"
 #include "custom/assistive_teleop.hpp"
+#include "custom/const.hpp"
 
 #include <algorithm>
 #include <cmath>
@@ -143,10 +144,12 @@ double complementary(double longterm, double shortterm, double coefficient)
     return coefficient * longterm + (1 - coefficient) * shortterm;
 }
 
-EMAFilter::EMAFilter(double alpha) : alpha(alpha), y(0), initialised(false) {}
+EMAFilter::EMAFilter(double time) : time(time), y(0), initialised(false) {}
 
 double EMAFilter::update(double x)
 {
+    double alpha = LOOP_DELAY / (time + LOOP_DELAY);   
+
     if (!initialised)
     {
         y = x;
