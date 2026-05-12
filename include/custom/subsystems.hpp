@@ -15,7 +15,7 @@ class DifferentialDrive
     SlewLimiter throttlelimit{5, 10};
     SlewLimiter steerlimit{5, 10};
 
-    PID headingPID{0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    PID headingPID{1.0, 0.0, 0.0, 0.0, 0.0, MAX_MILIVOLTS};
     HeadingHold headinghold{driveIMU, headingPID};
 
   public:

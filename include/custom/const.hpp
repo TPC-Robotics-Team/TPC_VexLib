@@ -30,7 +30,7 @@ struct WaypointAccel {
     double ddx, ddy;       // curvature vector
 };
 
-static constexpr int   ARM_SPEED       = 100;   // RPM
+static constexpr int   ARM_SPEED       = 200;   // RPM
 static constexpr int   CLAW_OPEN_POS   = 0;     // degrees
-static constexpr int   CLAW_CLOSED_POS = 90;    
-static constexpr int   CLAW_HOLD_MILIVOLT  = 20; 
+static constexpr int   CLAW_CLOSED_POS = 720;    
+static constexpr int   CLAW_HOLD_MILIVOLT  = 2000; 

@@ -121,8 +121,8 @@ void DifferentialDrive::curvature(bool useHeadingHold)
     {
         double correction = headinghold.update(throttle, steer);
 
-        left = std::clamp(left + correction, -127.0, 127.0);
-        right = std::clamp(right - correction, -127.0, 127.0);
+        left = std::clamp(left + correction, -MAX_JOYSTICK, MAX_JOYSTICK);
+        right = std::clamp(right - correction, -MAX_JOYSTICK, MAX_JOYSTICK);
     }
 
     leftMotors.move_voltage(joystickToVoltage(left));

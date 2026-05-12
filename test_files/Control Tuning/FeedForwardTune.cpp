@@ -16,7 +16,7 @@ AutonDifferentialDrive auton_drive(LeftMotors, RightMotors);
 void autonomous() {
     int TEST_VOLTAGE;
 
-    auton_drive.tank(TEST_VOLTAGE, TEST_VOLTAGE);
+    auton_drive.autonDrive(TEST_VOLTAGE, TEST_VOLTAGE);
 }
 
 void opcontrol() {

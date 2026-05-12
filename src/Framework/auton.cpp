@@ -5,8 +5,4 @@ AutonDifferentialDrive::AutonDifferentialDrive(pros::MotorGroup& LeftMotors, pro
 {
 }
 
-void AutonDifferentialDrive::tank(int left, int right)
-{
-    LeftMotors.move_voltage(left);
-    RightMotors.move_voltage(right);
-}
+void AutonDifferentialDrive::autonDrive(int velocity, int angularVelocity) {}

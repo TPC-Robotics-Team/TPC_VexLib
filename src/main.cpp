@@ -14,8 +14,10 @@ void opcontrol()
 {
     while (true)
     {
-        drive.tank();
+        drive.curvature(false);
+        arm.armControl();
+        arm.clawControl();
 
-        pros::delay(20);
+        pros::delay(LOOP_DELAY);
     }
 }
