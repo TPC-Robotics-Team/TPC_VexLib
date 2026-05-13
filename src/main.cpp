@@ -14,7 +14,7 @@ void opcontrol()
 {
     while (true)
     {
-        drive.curvature(false);
+        drive.curvature(true);
         arm.armControl();
         arm.clawControl();
 

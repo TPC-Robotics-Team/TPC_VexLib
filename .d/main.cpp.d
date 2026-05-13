@@ -20,36 +20,36 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/lv_types.h \
  include/liblvgl/core/../draw/../misc/../font/lv_symbol_def.h \
  include/liblvgl/core/../draw/../misc/../font/../draw/lv_draw_buf.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_math.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_assert.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_log.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_mem.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_string.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_palette.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color_op.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_string.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_math.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_assert.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_log.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_mem.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_string.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_palette.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color_op.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_string.h \
  include/liblvgl/core/../draw/../misc/../font/../draw/lv_image_dsc.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/lv_area.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_entry.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/osal/lv_os.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/osal/lv_os_none.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/osal/lv_os.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/osal/lv_os_none.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_private.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_lru_rb.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_image_cache.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
  include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_image_header_cache.h \
  include/liblvgl/core/../draw/../misc/lv_color.h \
  include/liblvgl/core/../draw/../misc/lv_area.h \
@@ -64,18 +64,18 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/core/../draw/../misc/lv_ll.h \
  include/liblvgl/core/../draw/../misc/lv_text.h \
  include/liblvgl/core/../draw/../misc/../stdlib/lv_sprintf.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
  include/liblvgl/core/../draw/../misc/lv_assert.h \
  include/liblvgl/core/../draw/../misc/lv_bidi.h \
  include/liblvgl/core/../draw/../misc/../layouts/lv_layout.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
  include/liblvgl/core/../draw/../misc/../layouts/flex/lv_flex.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h \
  include/liblvgl/core/../draw/../misc/../layouts/grid/lv_grid.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h \
  include/liblvgl/core/../draw/../misc/lv_style_gen.h \
  include/liblvgl/core/../draw/../misc/lv_text.h \
  include/liblvgl/core/../draw/../misc/lv_profiler.h \
@@ -91,12 +91,14 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/core/../draw/sw/../../misc/lv_area.h \
  include/liblvgl/core/../draw/sw/../../misc/lv_color.h \
  include/liblvgl/core/../draw/sw/../../display/lv_display.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_timer.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_array.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_types.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_timer.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_event.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_array.h \
+ include/liblvgl/core/../draw/sw/../../display/../misc/lv_color.h \
+ include/liblvgl/core/../draw/sw/../../display/../draw/lv_draw.h \
  include/liblvgl/core/../draw/sw/../../osal/lv_os.h \
  include/liblvgl/core/../draw/sw/../lv_draw_vector.h \
  include/liblvgl/core/../draw/sw/../../misc/lv_array.h \
@@ -140,39 +142,39 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/core/../others/sysmon/lv_sysmon.h \
  include/liblvgl/core/../others/sysmon/../../misc/lv_timer.h \
  include/liblvgl/core/../others/sysmon/../../others/observer/lv_observer.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_style.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_assert.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_tree.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_anim.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_pos.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_scroll.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_bidi.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style_gen.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_draw.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_rect.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_label.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_image.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_line.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_arc.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_class.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_property.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_event.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/indev/lv_indev.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_group.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_ll.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_timer.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_group.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_style.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_assert.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_tree.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_anim.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_pos.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_scroll.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_bidi.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style_gen.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_draw.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_rect.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_label.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_image.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_line.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_arc.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_class.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_property.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_event.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_event.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/indev/lv_indev.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_group.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_ll.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_timer.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_event.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_group.h \
  include/liblvgl/core/../stdlib/builtin/lv_tlsf.h \
  include/liblvgl/core/../stdlib/builtin/../../lv_conf_internal.h \
  include/liblvgl/core/../stdlib/builtin/../../osal/lv_os.h \
@@ -243,16 +245,16 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/libs/qrcode/lv_qrcode_private.h \
  include/liblvgl/libs/qrcode/../../widgets/canvas/lv_canvas_private.h \
  include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image_private.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_private.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_private.h \
  include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_fs.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_fs.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw.h \
  include/liblvgl/libs/qrcode/../../widgets/canvas/lv_canvas.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
  include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_image.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_image.h \
  include/liblvgl/libs/qrcode/lv_qrcode.h \
  include/liblvgl/libs/qrcode/../../lv_conf_internal.h \
  include/liblvgl/libs/qrcode/../../misc/lv_color.h \
@@ -363,13 +365,13 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/widgets/slider/../bar/../../core/lv_obj.h \
  include/liblvgl/widgets/slider/../bar/../../misc/lv_anim.h \
  include/liblvgl/widgets/slider/../bar/../label/lv_label.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/font/lv_font.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/font/lv_symbol_def.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_text.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/font/lv_font.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/font/lv_symbol_def.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_text.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw.h \
  include/liblvgl/widgets/slider/lv_slider.h \
  include/liblvgl/widgets/slider/../bar/lv_bar.h \
  include/liblvgl/widgets/switch/lv_switch_private.h \
@@ -604,7 +606,7 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/drivers/display/fb/lv_linux_fbdev.h \
  include/liblvgl/drivers/display/fb/../../../display/lv_display.h \
  include/liblvgl/drivers/display/tft_espi/lv_tft_espi.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h \
  include/liblvgl/drivers/display/lcd/lv_lcd_generic_mipi.h \
  include/liblvgl/drivers/display/lcd/../../../display/lv_display.h \
  include/liblvgl/drivers/display/ili9341/lv_ili9341.h \
@@ -616,9 +618,9 @@ bin/main.cpp.o: src/main.cpp include/main.h include/api.h \
  include/liblvgl/drivers/display/st7796/lv_st7796.h \
  include/liblvgl/drivers/display/st7796/../lcd/lv_lcd_generic_mipi.h \
  include/liblvgl/drivers/display/renesas_glcdc/lv_renesas_glcdc.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h \
+ C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h \
  include/liblvgl/drivers/display/st_ltdc/lv_st_ltdc.h \
- d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h \
+ include/liblvgl/drivers/display/st_ltdc/../../../lv_conf_internal.h \
  include/liblvgl/drivers/nuttx/lv_nuttx_entry.h \
  include/liblvgl/drivers/nuttx/../../lv_conf_internal.h \
  include/liblvgl/drivers/nuttx/../../display/lv_display.h \
@@ -699,36 +701,36 @@ include/liblvgl/core/../draw/../misc/../font/../lv_conf_internal.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/lv_types.h:
 include/liblvgl/core/../draw/../misc/../font/lv_symbol_def.h:
 include/liblvgl/core/../draw/../misc/../font/../draw/lv_draw_buf.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_math.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_assert.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_log.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_mem.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_string.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_palette.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color_op.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/stdlib/lv_string.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_math.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_assert.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_log.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_mem.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_string.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_palette.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color_op.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/stdlib/lv_string.h:
 include/liblvgl/core/../draw/../misc/../font/../draw/lv_image_dsc.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/lv_area.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_entry.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/osal/lv_os.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/osal/lv_os_none.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/osal/lv_os.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/osal/lv_os_none.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_private.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_cache_lru_rb.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_image_cache.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
 include/liblvgl/core/../draw/../misc/../font/../misc/cache/lv_image_header_cache.h:
 include/liblvgl/core/../draw/../misc/lv_color.h:
 include/liblvgl/core/../draw/../misc/lv_area.h:
@@ -743,18 +745,18 @@ include/liblvgl/core/../draw/../misc/../tick/../misc/lv_types.h:
 include/liblvgl/core/../draw/../misc/lv_ll.h:
 include/liblvgl/core/../draw/../misc/lv_text.h:
 include/liblvgl/core/../draw/../misc/../stdlib/lv_sprintf.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
 include/liblvgl/core/../draw/../misc/lv_assert.h:
 include/liblvgl/core/../draw/../misc/lv_bidi.h:
 include/liblvgl/core/../draw/../misc/../layouts/lv_layout.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
 include/liblvgl/core/../draw/../misc/../layouts/flex/lv_flex.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h:
 include/liblvgl/core/../draw/../misc/../layouts/grid/lv_grid.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h:
 include/liblvgl/core/../draw/../misc/lv_style_gen.h:
 include/liblvgl/core/../draw/../misc/lv_text.h:
 include/liblvgl/core/../draw/../misc/lv_profiler.h:
@@ -770,12 +772,14 @@ include/liblvgl/core/../draw/sw/../lv_draw.h:
 include/liblvgl/core/../draw/sw/../../misc/lv_area.h:
 include/liblvgl/core/../draw/sw/../../misc/lv_color.h:
 include/liblvgl/core/../draw/sw/../../display/lv_display.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_timer.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_array.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_types.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_timer.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_event.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_array.h:
+include/liblvgl/core/../draw/sw/../../display/../misc/lv_color.h:
+include/liblvgl/core/../draw/sw/../../display/../draw/lv_draw.h:
 include/liblvgl/core/../draw/sw/../../osal/lv_os.h:
 include/liblvgl/core/../draw/sw/../lv_draw_vector.h:
 include/liblvgl/core/../draw/sw/../../misc/lv_array.h:
@@ -819,39 +823,39 @@ include/liblvgl/core/../osal/lv_os.h:
 include/liblvgl/core/../others/sysmon/lv_sysmon.h:
 include/liblvgl/core/../others/sysmon/../../misc/lv_timer.h:
 include/liblvgl/core/../others/sysmon/../../others/observer/lv_observer.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_style.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_color.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_assert.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_tree.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_anim.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_pos.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_scroll.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_bidi.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style_gen.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_style.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_draw.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_rect.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_label.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_image.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_line.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_arc.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_class.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_property.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_event.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/indev/lv_indev.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_group.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_ll.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_area.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_timer.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_event.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_group.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_style.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_color.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_assert.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_tree.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_anim.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_pos.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_scroll.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_bidi.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style_gen.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_style.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_draw.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_rect.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_label.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_image.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_line.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_arc.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_class.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_property.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_event.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_event.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/indev/lv_indev.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_group.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_ll.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_area.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_timer.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_event.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_group.h:
 include/liblvgl/core/../stdlib/builtin/lv_tlsf.h:
 include/liblvgl/core/../stdlib/builtin/../../lv_conf_internal.h:
 include/liblvgl/core/../stdlib/builtin/../../osal/lv_os.h:
@@ -925,16 +929,16 @@ include/liblvgl/others/observer/lv_observer.h:
 include/liblvgl/libs/qrcode/lv_qrcode_private.h:
 include/liblvgl/libs/qrcode/../../widgets/canvas/lv_canvas_private.h:
 include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image_private.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj_private.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj_private.h:
 include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_fs.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_fs.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw.h:
 include/liblvgl/libs/qrcode/../../widgets/canvas/lv_canvas.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
 include/liblvgl/libs/qrcode/../../widgets/canvas/../image/lv_image.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw_image.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw_image.h:
 include/liblvgl/libs/qrcode/lv_qrcode.h:
 include/liblvgl/libs/qrcode/../../lv_conf_internal.h:
 include/liblvgl/libs/qrcode/../../misc/lv_color.h:
@@ -1055,13 +1059,13 @@ include/liblvgl/widgets/slider/../bar/../../lv_conf_internal.h:
 include/liblvgl/widgets/slider/../bar/../../core/lv_obj.h:
 include/liblvgl/widgets/slider/../bar/../../misc/lv_anim.h:
 include/liblvgl/widgets/slider/../bar/../label/lv_label.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_types.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/core/lv_obj.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/font/lv_font.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/font/lv_symbol_def.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/misc/lv_text.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/draw/lv_draw.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/lv_conf_internal.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_types.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/core/lv_obj.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/font/lv_font.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/font/lv_symbol_def.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/misc/lv_text.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/draw/lv_draw.h:
 include/liblvgl/widgets/slider/lv_slider.h:
 include/liblvgl/widgets/slider/../bar/lv_bar.h:
 include/liblvgl/widgets/switch/lv_switch_private.h:
@@ -1311,7 +1315,7 @@ include/liblvgl/drivers/display/drm/../../../display/lv_display.h:
 include/liblvgl/drivers/display/fb/lv_linux_fbdev.h:
 include/liblvgl/drivers/display/fb/../../../display/lv_display.h:
 include/liblvgl/drivers/display/tft_espi/lv_tft_espi.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h:
 include/liblvgl/drivers/display/lcd/lv_lcd_generic_mipi.h:
 include/liblvgl/drivers/display/lcd/../../../display/lv_display.h:
 include/liblvgl/drivers/display/ili9341/lv_ili9341.h:
@@ -1323,9 +1327,9 @@ include/liblvgl/drivers/display/st7789/../lcd/lv_lcd_generic_mipi.h:
 include/liblvgl/drivers/display/st7796/lv_st7796.h:
 include/liblvgl/drivers/display/st7796/../lcd/lv_lcd_generic_mipi.h:
 include/liblvgl/drivers/display/renesas_glcdc/lv_renesas_glcdc.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/display/lv_display.h:
+C:/Users/Admin/Pictures/TPC_VexLib/include/liblvgl/display/lv_display.h:
 include/liblvgl/drivers/display/st_ltdc/lv_st_ltdc.h:
-d:/CODE/PROS\ VEX\ V5/TPC_VexLibGit/include/liblvgl/lv_conf_internal.h:
+include/liblvgl/drivers/display/st_ltdc/../../../lv_conf_internal.h:
 include/liblvgl/drivers/nuttx/lv_nuttx_entry.h:
 include/liblvgl/drivers/nuttx/../../lv_conf_internal.h:
 include/liblvgl/drivers/nuttx/../../display/lv_display.h:
