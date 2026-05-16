@@ -1,13 +1,11 @@
 #include "main.h"
 #include "pros/misc.h"
 #include "custom/auton.hpp"
+#include "custom/config.hpp"
+#include <fstream>
 
 
-
-pros::Controller master(pros::E_CONTROLLER_MASTER);
-
-pros::MotorGroup LeftMotors ({1});
-pros::MotorGroup RightMotors ({-2});
+//* adding manual drive and fix <fstream>//*
 
 
 AutonDifferentialDrive auton_drive(LeftMotors, RightMotors);
@@ -63,6 +61,7 @@ void autonomous() {
 
 void opcontrol() {
     while (true){
+        drive.tank(true);
         if (master.get_digital(pros::E_CONTROLLER_DIGITAL_R2)){
             autonomous();
         };
